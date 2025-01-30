@@ -5,8 +5,9 @@
 
 ### 360手机资源站
 * https://360os.top
-* https://os.360os.top/
-* https://360rom.github.io/
+* https://os.360os.top
+* https://doc.360os.top
+* (备用)https://360rom.github.io
 
 ### 360手机机型和代号
 
