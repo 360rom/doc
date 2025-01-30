@@ -1,7 +1,7 @@
 ### 360手机资源站
 * 官站：https://360os.top
 * （360资源下载）https://os.360os.top
-* (刷机文档知识库)https://doc.360os.top
+* （刷机文档知识库）https://doc.360os.top
 * (备用)https://360rom.github.io
 
 
