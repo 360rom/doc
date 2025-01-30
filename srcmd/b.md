@@ -27,7 +27,17 @@
 
 
 ##### 禁用驱动程序强制签名
-*注**：仅适用于MTK端口驱动；一般大于win7系统，需电脑配置禁用
+
+注：仅适用于MTK端口驱动；一般大于win7系统，需电脑配置禁用
+
+1. Win+R打开运行窗口，输入：gpedit.msc
+2. 用户配置->管理模版->系统->驱动程序安装
+
+<img src="https://360rom.github.io/doc/pic/禁用驱动程序强制签名-1.png" class="center-image">
+
+3. 双击“设备驱动程序的代码签名”，选择“已启用”，选择“忽略”，确定
+
+<img src="https://360rom.github.io/doc/pic/禁用驱动程序强制签名-2.png" class="center-image">
 
 ### 刷机解锁
 **注**：云锁机，需特殊处理
