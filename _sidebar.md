@@ -17,5 +17,5 @@
 - 手机附属功能
   - [功能选用](srcmd/e.md)
 
-* [结语](srcmd/f.md)
+- [结语](srcmd/f.md)
 
