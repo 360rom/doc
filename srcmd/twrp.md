@@ -197,5 +197,7 @@
 ----------
 
  ### N7 ROOT
- <h3 align='center'> 360N7 ROOT TWRP教程</h3>
+ <h3 align='center'> 360N7 ROOT 教程</h3>
+
+ 
  
