@@ -25,52 +25,8 @@
 
 
 <body>
-    <!-- 密码弹窗遮罩 -->
-    <div id="password-modal" style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.6);z-index:9999;display:flex;align-items:center;justify-content:center;">
-      <div style="background:#fff;padding:32px 24px 24px 24px;border-radius:12px;box-shadow:0 2px 16px rgba(0,0,0,0.2);min-width:320px;max-width:90vw;text-align:center;position:relative;">
-        <div style="margin-bottom:18px;font-size:18px;font-weight:500;">请输入今日密码</div>
-        <div style="position:relative;display:flex;align-items:center;">
-          <input id="password-input" maxlength="6" placeholder="输入密码..." style="width:100%;padding:10px 70px 10px 12px;font-size:16px;border:2px solid #ccc;border-radius:6px;outline:none;transition:border-color 0.2s;" />
-          <button id="password-confirm" style="position:absolute;right:6px;top:4px;padding:6px 16px;font-size:15px;background:#409eff;color:#fff;border:none;border-radius:4px;cursor:pointer;">确认</button>
-        </div>
-        <div id="password-error" style="color:#e74c3c;font-size:15px;margin-top:10px;display:none;">密码错误，请重试</div>
-        <img src="pic/wx-code.png" class="center-image" style="margin:24px auto 10px auto;display:block;max-width:220px;width:60%;height:auto;" />
-        <div style="margin-top:10px;font-size:15px;color:#888;text-align:center;">技术支持</div>
-      </div>
-    </div>
     <!-- 定义加载时候的动作 -->
     <div id="app">加载中...</div>
-    <script>
-      // 密码弹窗逻辑
-      function getTodayPwd() {
-        var d = new Date();
-        var mm = String(d.getMonth()+1).padStart(2,'0');
-        var dd = String(d.getDate()).padStart(2,'0');
-        return mm+dd;
-      }
-      var modal = document.getElementById('password-modal');
-      var input = document.getElementById('password-input');
-      var btn = document.getElementById('password-confirm');
-      var err = document.getElementById('password-error');
-      input.addEventListener('focus',function(){
-        input.style.borderColor = '#409eff';
-      });
-      input.addEventListener('blur',function(){
-        input.style.borderColor = '#ccc';
-      });
-      btn.onclick = function(){
-        if(input.value.trim()===getTodayPwd()){
-          modal.style.display='none';
-        }else{
-          err.style.display='block';
-          setTimeout(function(){err.style.display='none';},3000);
-        }
-      };
-      // 回车确认
-      input.addEventListener('keydown',function(e){
-        if(e.key==='Enter')btn.click();
-      });
-    </script>
     <!-- docsify的js依赖 -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
     <!-- emoji表情支持 -->
